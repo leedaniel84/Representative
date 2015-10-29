@@ -15,6 +15,7 @@ class SearchViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     var resultsReps: [Representative] = []
     @IBOutlet weak var pickerView: UIPickerView!
     
+<<<<<<< HEAD
     
     @IBAction func searchButtonTapped() {
         let index = self.pickerView.selectedRowInComponent(0)
@@ -61,4 +62,28 @@ class SearchViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return self.states[row]
     }
 
+=======
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return states.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return states[row]
+        
+    }
+    
+   
+    @IBAction func searchButtonTapped(sender: UIButton) {
+    }
+    
+    
+    
+>>>>>>> fcf1452edb719bd79132daf04e959410e0937695
 }

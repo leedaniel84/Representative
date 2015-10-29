@@ -2,7 +2,11 @@
 //  Representative.swift
 //  Representatives
 //
+<<<<<<< HEAD
 //  Created by Taylor Mott on 10/28/15.
+=======
+//  Created by Thang H Tong on 10/29/15.
+>>>>>>> fcf1452edb719bd79132daf04e959410e0937695
 //  Copyright © 2015 DevMountain. All rights reserved.
 //
 
@@ -27,7 +31,11 @@ class Representative {
     var office: String?
     var link: String?
     
+<<<<<<< HEAD
     init(jsonDictionary : [String: String]) {
+=======
+    init(jsonDictionary: [String: String]) {
+>>>>>>> fcf1452edb719bd79132daf04e959410e0937695
         self.name = jsonDictionary[Representative.kNameKey]
         self.party = jsonDictionary[Representative.kPartyKey]
         self.state = jsonDictionary[Representative.kStateKey]
@@ -36,4 +44,12 @@ class Representative {
         self.office = jsonDictionary[Representative.kOfficeKey]
         self.link = jsonDictionary[Representative.kLinkKey]
     }
+<<<<<<< HEAD
 }
+=======
+    
+        
+        
+    
+}
+>>>>>>> fcf1452edb719bd79132daf04e959410e0937695
